@@ -1,16 +1,16 @@
-# JS进阶集合练习
+# JS colleciton advanced
 
-## 使用简介
+## Get Started
 
-1.运行所有测试
+1. run all tests
 ```
 npm test
 ```
-2.运行某个文件夹下的测试
+2.run tests under specified folder
 ```
 npm run test-single specs/filter/
 ```
-3.运行单个文件的测试
+3.run a specified test
 ```
 npm run test-single specs/filter/choose_even_spec.js
 ```
