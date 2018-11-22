@@ -1,7 +1,7 @@
 'use strict';
 
 function grouping_count(collection) {
-	var tmp = [];
+	/*var tmp = [];
 	var tmpCount =[]; 
 	var result={};
 	for(var i=0; i<collection.length;i++){
@@ -20,9 +20,29 @@ function grouping_count(collection) {
 	for(var i=0; i<tmp.length;i++){
 		var string = tmp[i]+''
 		result[string] = tmpCount[i];
-	}
-	return result;
+	}*/
+	//return result;
   //implement here
+  
+  /*var myTmp ={}
+  collection.filter(a=>{
+  	var string = a+'';
+  	myTmp[a] =0;
+
+  });
+  collection.filter(a=>{
+  	var string = a+'';
+  	myTmp[a] +=1;
+
+  });
+  return myTmp*/
+  var result={};
+  collection.filter((element, index)=>collection.indexOf(element)===index).map(element=>{
+  	result[element] = collection.filter(y=>element==y).length
+  });
+  return result;
+
+
 }
 
 module.exports = grouping_count;

@@ -1,7 +1,8 @@
 'use strict';
 function map_to_even(collection){
   
-  return map(collection, timeTwo);
+  return collection.map(a=>a*2)
+  //return map(collection, timeTwo);
 }
 
 function timeTwo(element){

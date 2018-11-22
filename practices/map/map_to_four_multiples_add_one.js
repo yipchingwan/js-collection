@@ -1,7 +1,8 @@
 'use strict';
 var map_to_four_multiples_add_one = function(collection){
   
-  return map(collection,timeFourPlusOne);
+  return collection.map(a=>a*4+1)
+  //return map(collection,timeFourPlusOne);
 };
 
 function timeFourPlusOne(element){
